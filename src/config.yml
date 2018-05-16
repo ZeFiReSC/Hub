@@ -1,0 +1,30 @@
+#Configuration file for the Hub plugin
+
+#location of the spawn of the server
+location:
+  spawn:
+    x: -230
+    y: 69
+    z: 0.5
+    yaw: 0
+    pitch: 0
+    world: "world"
+
+#enable custom help display
+custom-help: false
+
+#what you want to display when use /help (need custom-help=true)
+help:
+- "&1a"
+- "&2a"
+- "&3a"
+- "&4a"
+- "&5a"
+- "&6a"
+- "&7a"
+- "&8a"
+- "&9a"
+- "&aa"
+
+#enable fall damage in the world
+enable-fall-damage: true

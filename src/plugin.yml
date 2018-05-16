@@ -1,0 +1,21 @@
+name: Hub
+author: ZeFiRe
+version: 1.0.0
+main: fr.zefire.hub.Main
+
+commands:
+  spawn:
+    description: the classic spawn command
+    usage: /<command> <set>
+  help:
+    description: a custom help command
+    usage: /<command>
+  gm:
+    aliases: gmode
+    description: change your gamemode
+    usage: /<command> <0|1|2|3> [player]
+  broadcast:
+    aliases: bc
+    description: send a message to all players
+    usage: /<command> <message>
+  menu:
