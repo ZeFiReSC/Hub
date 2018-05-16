@@ -28,7 +28,7 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		instance = this;
-		System.out.println("Activation");
+		System.out.println("Activated");
 
 		registerCommands();
 		registerEvents();
