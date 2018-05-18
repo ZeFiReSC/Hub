@@ -31,7 +31,7 @@ public class SpawnCommand implements CommandExecutor {
 			World world = Bukkit.getWorld(config.getString("location.spawn.world"));
 
 			player.teleport(new Location(world, x, y, z, yaw, pitch));
-			player.sendMessage("§bVous avez été téléporté au spawn.");
+			player.sendMessage("Â§bVous avez Ã©tÃ© tÃ©lÃ©portÃ© au spawn.");
 			
 		}else if(args.length == 1 && args[0].equalsIgnoreCase("set")) {
 			if(!player.hasPermission("hub.commands.spawnset"))
@@ -51,17 +51,11 @@ public class SpawnCommand implements CommandExecutor {
 			config.set("location.spawn.pitch", pitch);
 			config.set("location.spawn.world", world);
 			Main.getInstance().saveConfig();
-			player.sendMessage("§bVous avez enregistré des nouvelles coordonnées pour le spawn");
+			player.sendMessage("Â§bVous avez enregistrÃ© des nouvelles coordonnÃ©es pour le spawn");
 			
 		}else {
-			player.sendMessage("§cErreur de syntaxe: /spawn <set>");
+			player.sendMessage("Â§cErreur de syntaxe: /spawn <set>");
 		}
-		
-		
-		
-		
-		
-		
 		
 		return true;
 	}

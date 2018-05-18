@@ -26,7 +26,7 @@ public class HelpCommand implements CommandExecutor {
 		        player.sendMessage(ChatColor.translateAlternateColorCodes('&', helpmessage));
 		    }
 		}else {
-			player.sendMessage("§cL'affichage custom de l'aide n'est pas activée.");
+			player.sendMessage("Â§cL'affichage custom de l'aide n'est pas activÃ©e.");
 			Bukkit.dispatchCommand(player, "bukkit:help");
 		}
 		

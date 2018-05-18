@@ -11,7 +11,7 @@ public class PlayerBlockBreakPlaceEvent implements Listener {
 	public void onPlayerBlockBreak(BlockBreakEvent event) {
 		if(!event.getPlayer().hasPermission("hub.admin")) {
 			event.setCancelled(true);
-			event.getPlayer().sendMessage("ง4Vous ne pouvez pas casser de blocs !");
+			event.getPlayer().sendMessage("ยง4Vous ne pouvez pas casser de blocs !");
 		}
 	}
 
@@ -19,7 +19,7 @@ public class PlayerBlockBreakPlaceEvent implements Listener {
 	public void onPlayerBlockPlace(BlockPlaceEvent event) {
 		if(!event.getPlayer().hasPermission("hub.admin")) {
 			event.setCancelled(true);
-			event.getPlayer().sendMessage("ง4Vous ne pouvez pas placer de blocs !");
+			event.getPlayer().sendMessage("ยง4Vous ne pouvez pas placer de blocs !");
 		}
 	}
 }

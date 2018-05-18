@@ -15,24 +15,24 @@ public class PlayerConnection implements Listener {
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
-		event.setJoinMessage("§8[§2§l+§8] §b" + player.getName());
+		event.setJoinMessage("Â§8[Â§2Â§l+Â§8] Â§b" + player.getName());
 		itemJoin(player);
 	}
 	
 	@EventHandler
 	public void onPlayerLeave(PlayerQuitEvent event) {
 		Player player = event.getPlayer();
-		event.setQuitMessage("§8[§4§l-§8] §b" + player.getName());
+		event.setQuitMessage("Â§8[Â§4Â§l-Â§8] Â§b" + player.getName());
 	}
 
 	private void itemJoin(Player player) {
 		ItemStack teleporter = new ItemStack(Material.COMPASS);
         ItemMeta tp = teleporter.getItemMeta();
-        tp.setDisplayName("§cTéléportation");
+        tp.setDisplayName("Â§cTÃ©lÃ©portation");
         teleporter.setItemMeta(tp);
 		ItemStack link = new ItemStack(Material.NAME_TAG);
         ItemMeta linkMeta = link.getItemMeta();
-        linkMeta.setDisplayName("§eLiens Utiles");
+        linkMeta.setDisplayName("Â§eLiens Utiles");
         link.setItemMeta(linkMeta);
 		ItemStack profile = getHead(player);
 		
@@ -45,7 +45,7 @@ public class PlayerConnection implements Listener {
 	private ItemStack getHead(Player player) {
         ItemStack item = new ItemStack(Material.SKULL_ITEM, 1, (short) 3);
         SkullMeta skull = (SkullMeta) item.getItemMeta();
-        skull.setDisplayName("§6Profile de " + player.getName());
+        skull.setDisplayName("Â§6Profile de " + player.getName());
         skull.setOwner(player.getName());
         item.setItemMeta(skull);
         return item;

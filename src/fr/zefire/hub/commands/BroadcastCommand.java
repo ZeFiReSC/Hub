@@ -15,21 +15,21 @@ public class BroadcastCommand implements CommandExecutor {
 			Player player = (Player) sender;
 			
 			if(args.length == 0) {
-				player.sendMessage("§cErreur de syntaxe: /broadcast <message>");
+				player.sendMessage("Â§cErreur de syntaxe: /broadcast <message>");
 				return true;
 			}
 			
-			StringBuilder builder = new StringBuilder("§c[§aBroadcast§c] §r" + args[0]);
+			StringBuilder builder = new StringBuilder("Â§c[Â§aBroadcastÂ§c] Â§r" + args[0]);
 			for (int i = 1; i < args.length; i++)
 				builder.append(args[i]);
 			player.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', builder.toString()));
 		}else {
 			if(args.length == 0) {
-				System.out.println("§cErreur de syntaxe: /broadcast <message>");
+				System.out.println("Â§cErreur de syntaxe: /broadcast <message>");
 				return true;
 			}
 			
-			StringBuilder builder = new StringBuilder("§c[§aBroadcast§c] §r" + args[0]);
+			StringBuilder builder = new StringBuilder("Â§c[Â§aBroadcastÂ§c] Â§r" + args[0]);
 			for (int i = 1; i < args.length; i++)
 				builder.append(args[i]);
 			Bukkit.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', builder.toString()));

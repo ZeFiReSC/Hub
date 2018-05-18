@@ -24,8 +24,8 @@ public class PlayerInteract implements Listener {
 			if (list.contains(event.getAction())) {
 				List<String> msg = new ArrayList<>();
 				msg.add("");
-				msg.add("§dSite : www.site.com");
-				msg.add("§dTeamSpeak : ts.teamspeak.com");
+				msg.add("Â§dSite : www.site.com");
+				msg.add("Â§dTeamSpeak : ts.teamspeak.com");
 				msg.add("");
 
 				for (String s : msg) {
@@ -38,9 +38,9 @@ public class PlayerInteract implements Listener {
 			if (list.contains(event.getAction())) {
 				List<String> msg = new ArrayList<>();
 				msg.add("");
-				msg.add("§3Nombre de sauts: " + event.getPlayer().getStatistic(Statistic.JUMP));
-				msg.add("§3Nombre de pas: " + event.getPlayer().getStatistic(Statistic.WALK_ONE_CM));
-				msg.add("§3Temps de jeu: " + event.getPlayer().getStatistic(Statistic.PLAY_ONE_TICK));
+				msg.add("Â§3Nombre de sauts: " + event.getPlayer().getStatistic(Statistic.JUMP));
+				msg.add("Â§3Nombre de pas: " + event.getPlayer().getStatistic(Statistic.WALK_ONE_CM));
+				msg.add("Â§3Temps de jeu: " + event.getPlayer().getStatistic(Statistic.PLAY_ONE_TICK));
 				msg.add("");
 
 				for (String s : msg) {

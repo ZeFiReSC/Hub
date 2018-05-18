@@ -10,6 +10,6 @@ public class ServerPing implements Listener {
 	@EventHandler
 	public void onServerPing(ServerListPingEvent event) {
 		event.setMaxPlayers(150);
-		event.setMotd("§6§l< Le Serveur de le développement >");
+		event.setMotd("Â§6Â§l< Le Serveur de le dÃ©veloppement >");
 	}
 }

@@ -19,11 +19,11 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class TeleporterGui implements Listener, CommandExecutor {
-	public Inventory tp = Bukkit.createInventory(null, 9, "§cTéléportation");
+	public Inventory tp = Bukkit.createInventory(null, 9, "Â§cTÃ©lÃ©portation");
 
 	private void teleportGui() {
-		tp.setItem(3, createGuiItem("§6§lSkyBlock", null, Material.GRASS));
-		tp.setItem(5, createGuiItem("§6§lFaction", null, Material.DIAMOND_SWORD));
+		tp.setItem(3, createGuiItem("Â§6Â§lSkyBlock", null, Material.GRASS));
+		tp.setItem(5, createGuiItem("Â§6Â§lFaction", null, Material.DIAMOND_SWORD));
 	}
 
 	@Override
@@ -63,11 +63,11 @@ public class TeleporterGui implements Listener, CommandExecutor {
 		if (clickedItem == null)
 			return;
 		if (clickedItem.getType() == Material.GRASS) {
-			player.sendMessage("§9Direction le SkyBlock");
+			player.sendMessage("Â§9Direction le SkyBlock");
 			player.closeInventory();
 		}
 		if (clickedItem.getType() == Material.DIAMOND_SWORD) {
-			player.sendMessage("§9Direction le Faction");
+			player.sendMessage("Â§9Direction le Faction");
 			player.closeInventory();
 		}
 	}
